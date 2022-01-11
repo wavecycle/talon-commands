@@ -45,9 +45,9 @@ panel git: key(alt-9)
 panel commit: key(alt-0)
 panel logcat: key(alt-f11)
 panel terminal: key(alt-f12)
-panel resource [manager]: key(ctrl-alt-shift-f1)
-panel inspection: key(ctrl-alt-shift-f11)
-panel device: key(ctrl-alt-shift-f12)
+panel resource [manager]:   key(ctrl-alt-shift-f1)
+panel inspection:           key(ctrl-alt-shift-f11)
+panel device:               key(ctrl-alt-shift-f12)
 
 view left:				key(alt-shift-left)			
 view right:				key(alt-shift-right)
@@ -98,25 +98,25 @@ warning next:			key(f2)
 warning previous:		key(shift-f2)
 
 android tag:				
-    "private const val TAG = "
+    'private const val TAG = ""'
     key(left:1)
 android invoke:			
-    "suspend operator fun invoke()"
+    'suspend operator fun invoke()'
     key(left:1)
 log verbose:				
-    "Log.v(TAG )"
+    'Log.v(TAG, "")'
     key(left:2)
 log debug:				
-    "Log.d(TAG )"
+    'Log.d(TAG, "")'
     key(left:2)
 log info:
-    "Log.i(TAG )"
+    'Log.i(TAG, "")'
     key(left:2)
 log warning:				
-    "Log.w(TAG )"
+    'Log.w(TAG, "")'
     key(left:2)
 log error:				
-    "Log.e(TAG )"
+    'Log.e(TAG, "")'
     key(left:2)
             
 throw exception:			
