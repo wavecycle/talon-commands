@@ -1,5 +1,6 @@
 # Requires https://plugins.jetbrains.com/plugin/10504-voice-code-idea
 app.name: Android Studio
+app.name: IntelliJ IDEA
 -
 
 # key_wait increases the delay when pressing keys (milliseconds)
@@ -96,6 +97,12 @@ breakpoint toggle:		key(ctrl-f8)
 [android] watch:		key(alt-[)
 warning next:			key(f2)
 warning previous:		key(shift-f2)
+
+String: 'String'
+Int: 'Int'
+Long: 'Long'
+Float: 'Float'
+Double: 'Double'
 
 android tag:				
     'private const val TAG = ""'
