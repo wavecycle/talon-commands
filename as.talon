@@ -6,7 +6,7 @@ app.name: IntelliJ IDEA
 # key_wait increases the delay when pressing keys (milliseconds)
 # this is useful if an app seems to jumble or drop keys
 settings():
-    key_wait = 4.0
+    key_wait = 8.0
 
 # template words: shift ctrl alt
 
@@ -52,6 +52,7 @@ panel device:               key(ctrl-alt-shift-f12)
 
 view left:				key(alt-shift-left)			
 view right:				key(alt-shift-right)
+[build] refresh:        key(ctrl-shift-f5)
 code left:				key(alt-left)
 code right:				key(alt-right)
 code close:				key(ctrl-f4)
@@ -98,11 +99,23 @@ breakpoint toggle:		key(ctrl-f8)
 warning next:			key(f2)
 warning previous:		key(shift-f2)
 
-String: 'String'
-Int: 'Int'
-Long: 'Long'
-Float: 'Float'
-Double: 'Double'
+# compound commands
+line number <digits>:
+    key(ctrl-g)
+    key(delete)
+    insert(digits)
+    # key(enter)
+
+# Data types
+# string: 'String'
+# integer: 'Int'
+# long: 'Long'
+# float: 'Float'
+# double: 'Double'
+# list:
+#     'List'
+#     key(<)
+
 
 android tag:				
     'private const val TAG = ""'
