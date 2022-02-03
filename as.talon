@@ -12,6 +12,7 @@ settings():
 
 # IDE voice commands
 android settings: key(ctrl-alt-s)
+project structure: key(ctrl-alt-shift-s)
 zen mode: key(ctrl-alt-shift-z)
 [android] info:	key(alt-enter)
 [android] help:	key(ctrl-q)
