@@ -57,6 +57,8 @@ view right:				key(alt-shift-right)
 code left:				key(alt-left)
 code right:				key(alt-right)
 code close:				key(ctrl-f4)
+[next] splitter:        key(ctrl-alt-shift-f5)
+move splitter:          key(ctrl-alt-shift-f6)
 code reformat:			key(ctrl-alt-l)
 block up:				key(alt-up)
 block down:				key(alt-down)
@@ -109,7 +111,7 @@ line number <digits>:
 
 # Data types
 # string: 'String'
-# integer: 'Int'
+integer: 'Int'
 # long: 'Long'
 # float: 'Float'
 # double: 'Double'
