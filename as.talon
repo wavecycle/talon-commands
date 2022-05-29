@@ -13,6 +13,7 @@ settings():
 # IDE voice commands
 android settings: key(ctrl-alt-s)
 project structure: key(ctrl-alt-shift-s)
+rebuild [project]: key(ctrl-alt-shift-f4)
 zen mode: key(ctrl-alt-shift-z)
 [android] info:	key(alt-enter)
 [android] help:	key(ctrl-q)
@@ -50,6 +51,7 @@ panel terminal: key(alt-f12)
 panel resource [manager]:   key(ctrl-alt-shift-f1)
 panel inspection:           key(ctrl-alt-shift-f11)
 panel device:               key(ctrl-alt-shift-f12)
+[panel] emulator:               key(ctrl-alt-shift-f2)
 
 view left:				key(alt-shift-left)			
 view right:				key(alt-shift-right)
@@ -59,10 +61,11 @@ code right:				key(alt-right)
 code close:				key(ctrl-f4)
 [next] splitter:        key(ctrl-alt-shift-f5)
 move splitter:          key(ctrl-alt-shift-f6)
+maximize [tab]:         key(ctrl-alt-shift-f3)
 code reformat:			key(ctrl-alt-l)
 block up:				key(alt-up)
 block down:				key(alt-down)
-block jump:				key(ctrl-shift-m)
+matching [bracket]:     key(ctrl-shift-m)
 comment line:			key(ctrl-/)
 comment block:			key(ctrl-shift-slash)
 android select:			key(ctrl-w)
@@ -103,8 +106,9 @@ warning next:			key(f2)
 warning previous:		key(shift-f2)
 
 # compound commands
-line number <digits>:
+go line <digits>:
     key(ctrl-g)
+    key(delete)
     key(delete)
     insert(digits)
     # key(enter)
@@ -147,7 +151,7 @@ throw exception:
     key(left:2)
 throw state:				
     "throw IllegalStateException()"
-    key(left:2)
+    key(left:1)
 throw argument:			
     "throw IllegalArgumentException()"
     key(left:2)
