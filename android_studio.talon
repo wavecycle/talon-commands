@@ -106,7 +106,7 @@ warning next:			key(f2)
 warning previous:		key(shift-f2)
 
 # compound commands
-go line <digits>:
+navigate <digits>:
     key(ctrl-g)
     key(delete)
     key(delete)
