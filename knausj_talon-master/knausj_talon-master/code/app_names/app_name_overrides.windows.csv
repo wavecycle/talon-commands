@@ -9,3 +9,5 @@ emulator, qemu-system-i386.exe
 emulator, qemu-system-x86_64.exe
 note pad, notepad.exe
 idea, Intellij IDEA
+explorer, explore.exe
+tags, id3ed.exe

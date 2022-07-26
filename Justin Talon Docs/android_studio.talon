@@ -21,6 +21,7 @@ zen mode: key(ctrl-alt-shift-z)
 [android] search: key(ctrl-shift-a)
 [search] everywhere: key(ctrl-alt-shift-f9)
 [search] file: key(ctrl-alt-shift-f10)
+regex: key(alt-x)
 
 duplicate [line]: key(ctrl-d)
 android case: key(ctrl-shift-u)
@@ -60,8 +61,8 @@ panel device:               key(ctrl-alt-shift-f12)
 view left:				key(alt-shift-left)			
 view right:				key(alt-shift-right)
 [build] refresh:        key(ctrl-shift-f5)
-code left:				key(alt-left)
-code right:				key(alt-right)
+code (last|left):.		key(alt-left)
+code (next|right):		key(alt-right)
 code close:				key(ctrl-f4)
 [next] splitter:        key(ctrl-alt-shift-f5)
 move splitter:          key(ctrl-alt-shift-f6)
@@ -110,15 +111,14 @@ warning next:			key(f2)
 warning previous:		key(shift-f2)
 
 # compound commands
-navigate <digits>:
+navigate <number_small>:
     key(ctrl-g)
     key(delete)
     key(delete)
-    insert(digits)
+    insert(number_small)
     # key(enter)
 
-jump left <digits>:
-    key(ctrl-left: digits)
+
 
 # Data types
 # string: 'String'
