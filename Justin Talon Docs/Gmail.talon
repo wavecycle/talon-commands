@@ -18,3 +18,6 @@ reply: key(r)
 [go] drafts:
     key(g)
     key(d)
+
+numbered list: key(ctrl-shift-7)
+bulleted list: key(ctrl-shift-8)
