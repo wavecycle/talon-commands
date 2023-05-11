@@ -39,6 +39,7 @@ menu refactor: key(alt-r)
 menu build:	key(alt-b)
 menu run: key(alt-u)
 menu tools: key(alt-t)
+menu git: key(alt-g)
 menu window: key(alt-w)
 menu help: key(alt-h)
 
