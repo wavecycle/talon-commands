@@ -20,7 +20,7 @@ zen mode: key(ctrl-alt-shift-z)
 [android] help:	key(ctrl-q)
 [android] search: key(ctrl-shift-a)
 [search] everywhere: key(ctrl-alt-shift-f9)
-[search] file: key(ctrl-alt-shift-f10)
+[search] (file|files): key(ctrl-shift-f)
 regex: key(alt-x)
 
 duplicate [line]: key(ctrl-d)
@@ -126,17 +126,6 @@ navigate <number_small>:
     insert(number_small)
     # key(enter)
 
-
-
-# Data types
-# string: 'String'
-integer: 'Int'
-# long: 'Long'
-# float: 'Float'
-# double: 'Double'
-# list:
-#     'List'
-#     key(<)
 
 
 android tag:				
