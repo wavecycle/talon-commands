@@ -92,11 +92,11 @@ refactor options:		key(ctrl-shift-alt-t)
 # [android] undo:			key(ctrl-z)
 # [android] redo:			key(ctrl-shift-z)
 
-rotate left: key(ctrl-alt-shift-3)
-rotate right: key(ctrl-alt-shift-4)
-emulator home: key(ctrl-alt-shift-5)
-emulator overview: key(ctrl-alt-shift-6)
-emulator back: key(ctrl-alt-shift-7)
+rotate left: key(ctrl-l)
+rotate right: key(ctrl-r)
+emulator home: key(ctrl-shift-h)
+emulator overview: key(ctrl-shift-w)
+emulator back: key(ctrl-shift-b)
 
 [android] menu:			key(ctrl-space)
 [android] hierarchy:	key(ctrl-h)
@@ -119,7 +119,7 @@ warning previous:		key(shift-f2)
 clear logcat: key(ctrl-alt-shift-8)
 
 # compound commands
-navigate <number_small>:
+(navigate|jump) <number_small>:
     key(ctrl-g)
     key(delete)
     key(delete)
