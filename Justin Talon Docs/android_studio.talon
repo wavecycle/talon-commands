@@ -96,7 +96,7 @@ rotate left: key(ctrl-l)
 rotate right: key(ctrl-r)
 emulator home: key(ctrl-shift-h)
 emulator overview: key(ctrl-shift-w)
-emulator back: key(ctrl-shift-b)
+(emulator|go) back: key(ctrl-shift-b)
 
 [android] menu:			key(ctrl-space)
 [android] hierarchy:	key(ctrl-h)
