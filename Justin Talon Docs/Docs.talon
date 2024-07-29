@@ -8,3 +8,7 @@ heading one: key(ctrl-alt-1)
 heading two: key(ctrl-alt-2)
 (number/numbered) list: key(ctrl-shift-7)
 bullet list: key(ctrl-shift-8)
+
+
+(page|sheet) next: key(alt-down)
+(page|sheet) last: key(alt-up)

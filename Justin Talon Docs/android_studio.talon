@@ -102,7 +102,7 @@ emulator overview: key(ctrl-shift-w)
 [android] hierarchy:	key(ctrl-h)
 [android] usage:		key(ctrl-b)	
 
-[android] run:			key(alt-shift-f10)
+run [it]:			key(alt-shift-f10)
 test run:				key(ctrl-shift-f10)
 [android] apply:		key(ctrl-f10)
 [android] debug:		key(alt-shift-f9)
