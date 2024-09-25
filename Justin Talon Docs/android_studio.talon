@@ -129,7 +129,7 @@ clear logcat: key(ctrl-alt-shift-8)
 
 
 android tag:				
-    'private const val TAG = ""'
+    'private const val "" = ""'
     key(left:1)
 android invoke:			
     'suspend operator fun invoke()'
@@ -137,19 +137,19 @@ android invoke:
 (todo|to do):
     '// Todo: '
 log verbose:				
-    'Log.v(TAG, "")'
+    'Log.v("", "")'
     key(left:2)
 log debug:				
-    'Log.d(TAG, "")'
+    'Log.d("", "")'
     key(left:2)
 log info:
-    'Log.i(TAG, "")'
+    'Log.i("", "")'
     key(left:2)
 log warning:				
-    'Log.w(TAG, "")'
+    'Log.w("", "")'
     key(left:2)
 log error:				
-    'Log.e(TAG, "")'
+    'Log.e("", "")'
     key(left:2)
             
 throw exception:			
