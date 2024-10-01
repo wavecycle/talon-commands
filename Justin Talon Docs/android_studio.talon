@@ -1,6 +1,10 @@
 # Requires https://plugins.jetbrains.com/plugin/10504-voice-code-idea
-app.name: Android Studio
-app.name: IntelliJ IDEA
+# NOTE: seems like you can't mix up "app" and "app.name"
+
+# app.name: Android Studio
+app: Android Studio
+app: jetbrains
+# app.name: IntelliJ IDEA
 -
 
 # key_wait increases the delay when pressing keys (milliseconds)

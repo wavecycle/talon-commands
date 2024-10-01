@@ -8,13 +8,13 @@ tag(): user.tabs
 # multiple_cursors.py support end
 
 # MY COMMANDS
-run [it]:			key(alt-shift-f10)
-settings: key(ctrl-alt-s)
-panel project: key(alt-1)
-[search] files: key(ctrl-shift-f)
-warning next: key(f2)
-warning previous: key(shift-f2)
-[android] info: key(alt-enter)
+# run [it]:			key(alt-shift-f10)
+# settings: key(ctrl-alt-s)
+# panel project: key(alt-1)
+# [search] files: key(ctrl-shift-f)
+# warning next: key(f2)
+# warning previous: key(shift-f2)
+# [android] info: key(alt-enter)
 
 # Auto complete
 complete: user.idea("action CodeCompletion")
