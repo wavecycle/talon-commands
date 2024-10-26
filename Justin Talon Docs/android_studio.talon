@@ -52,29 +52,29 @@ panel favorites: key(alt-2)
 panel find:	key(alt-3)
 panel run: key(alt-4)
 panel debug: key(alt-5)
-panel [app] quality [insights]: key(ctrl-alt-f2)
+panel [app] quality [insights]:key(ctrl-alt-f2)
 panel problems:	key(alt-6)
 panel structure: key(alt-7)
 panel git: key(alt-9)
 panel commit: key(alt-0)
 panel logcat: key(alt-f11)
 panel terminal: key(alt-f12)
-panel resource [manager]:   key(ctrl-alt-shift-f1)
-panel inspection:           key(ctrl-alt-shift-f11)
-panel device:               key(ctrl-alt-shift-f12)
-panel assistant: key(ctrl-alt-f1)
-[panel] (emulator|robot):               key(ctrl-alt-shift-f2)
+panel resource [manager]: key(ctrl-alt-shift-f1)
+panel inspection: key(ctrl-alt-shift-f11)
+panel device: key(ctrl-alt-shift-f12)
+[panel] gemini: key(ctrl-alt-f1)
+[panel] (emulator|robot): key(ctrl-alt-shift-f2)
 
 view left:				key(alt-shift-left)			
 view right:				key(alt-shift-right)
 [build] refresh:        key(ctrl-shift-f5)
-(tab|code) (last|left):		key(alt-left)
-(tab|code) (next|right):		key(alt-right)
+(tab|code) (last|left):	key(alt-left)
+(tab|code) (next|right): key(alt-right)
 (tab|code) close:				key(ctrl-f4)
-[next] splitter:        key(ctrl-alt-shift-f5)
-move splitter:          key(ctrl-alt-shift-f6)
-maximize [tab]:         key(ctrl-alt-shift-f3)
-code reformat:			key(ctrl-alt-l)
+[next] splitter: key(ctrl-alt-shift-f5)
+move splitter: key(ctrl-alt-shift-f6)
+maximize [tab]:key(ctrl-alt-shift-f3)
+code reformat: key(ctrl-alt-l)
 block up:				key(alt-up)
 block down:				key(alt-down)
 matching [bracket]:     key(ctrl-shift-m)
@@ -137,7 +137,7 @@ clear logcat: key(ctrl-alt-shift-8)
 
 
 android tag:				
-    'private const val "" = ""'
+    'private const val TAG = ""'
     key(left:1)
 android invoke:			
     'suspend operator fun invoke()'
@@ -162,29 +162,25 @@ log error:
             
 throw exception:			
     "throw Exception()"
-    key(left:2)
+    key(left:1)
 throw state:				
     "throw IllegalStateException()"
     key(left:1)
 throw argument:			
     "throw IllegalArgumentException()"
-    key(left:2)
+    key(left:1)
 throw null:				
     "throw NullPointerException()"
-    key(left:2)
+    key(left:1)
 throw cast:				
     "throw ClassCastException()"
-    key(left:2)
+    key(left:1)
 throw jason:				
     "throw JSONException()"
-    key(left:2)
+    key(left:1)
 throw file:				
     "throw FileNotFoundException()"
-    key(left:2)
-
-android toast:			
-    "Toast.makeText(baseContext, '', Toast.LENGTH_LONG).show()"
-    key(left:28)
+    key(left:1)
 
 
 arrow: 					"->"

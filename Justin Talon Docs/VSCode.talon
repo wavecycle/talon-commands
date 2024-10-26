@@ -1,4 +1,5 @@
 app.name: Visual Studio Code
+app.name: Code
 -
 
 settings: key(ctrl-,)
