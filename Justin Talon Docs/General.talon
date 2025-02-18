@@ -2,10 +2,7 @@
 settings():
     key_wait = 8.0
 
-windows shutdown:
-    key(super-x)
-    key(u)
-    key(u)
+return: key(enter)
 
 grab left:
     key(ctrl-shift-left)
