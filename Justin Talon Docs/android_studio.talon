@@ -10,7 +10,7 @@ app: jetbrains
 # key_wait increases the delay when pressing keys (milliseconds)
 # this is useful if an app seems to jumble or drop keys
 settings():
-    key_wait = 8.0
+    key_wait = 1.0
 
 # template words: shift ctrl alt
 
@@ -80,12 +80,17 @@ code reformat: key(ctrl-alt-l)
 block up:				key(alt-up)
 block down:				key(alt-down)
 matching [bracket]:     key(ctrl-shift-m)
+(navigate|jump): key(ctrl-g)
+
 comment line:			key(ctrl-/)
 comment block:			key(ctrl-shift-/)
 android select:			key(ctrl-w)
 fold close:				key(ctrl-minus)
 fold open:				key(ctrl-=)
 fold all:				key(ctrl-shift-=)
+
+difference next: key(f7)
+difference previous: key(shift-f7)
 
 refactor rename:		key(shift-f6)
 refactor function:		key(ctrl-alt-m)
@@ -121,7 +126,7 @@ stop [it]:			key(ctrl-f2)
 [android] evaluate:		key(alt-f8)
 step into:				key(f7)
 step over:				key(f8)
-step cursor:			key(alt-f9)
+step cursor:			key(alt-shift-9)
 breakpoint toggle:		key(ctrl-f8)
 [new] watch:		key(insert)
 warning next:			key(f2)
@@ -129,11 +134,11 @@ warning previous:		key(shift-f2)
 clear logcat: key(ctrl-alt-shift-8)
 
 # compound commands
-(navigate|jump) <number_small>:
-    key(ctrl-g)
-    key(delete)
-    key(delete)
-    insert(number_small)
+# (navigate|jump) <number_small>:
+    # (navigate|jump): key(ctrl-g)
+    # key(delete)
+    # key(delete)
+    # insert(number_small)
     # key(enter)
 
 
