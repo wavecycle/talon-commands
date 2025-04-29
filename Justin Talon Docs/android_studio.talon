@@ -132,7 +132,8 @@ breakpoint toggle:		key(ctrl-f8)
 warning next:			key(f2)
 warning previous:		key(shift-f2)
 clear logcat: key(ctrl-alt-shift-8)
-folder terminal: key(ctrl-alt-shift-f7)
+open files: key(ctrl-alt-shift-f12)
+open terminal: key(ctrl-alt-shift-f7)
 
 # compound commands
 # (navigate|jump) <number_small>:
