@@ -192,7 +192,16 @@ throw file:
     key(left:1)
 
 
-arrow: 					"->"
-elvis: 					"?:"
+arrow: "->"
+elvis: "?:"
+
+bold open: "&lt;b>"
+bold close: "&lt;/b>"
+italics open: "&lt;i>"
+italics close: "&lt;/i>"
+underline open: "&lt;u>"
+underline close: "&lt;/u>"
+line break: "&lt;br/>"
+
 
 # commands from jetbrains.talon
