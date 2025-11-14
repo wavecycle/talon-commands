@@ -62,6 +62,7 @@ panel terminal: key(alt-f12)
 panel resource [manager]: key(ctrl-alt-shift-f1)
 panel inspection: key(ctrl-alt-shift-f11)
 panel device: key(ctrl-alt-shift-f12)
+panel gradle: key(ctrl-alt-shift-f5)
 [panel] gemini: key(alt-shift-f1)
 [panel] (emulator|robot): key(ctrl-alt-shift-f2)
 
