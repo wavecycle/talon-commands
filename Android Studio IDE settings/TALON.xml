@@ -1,0 +1,56 @@
+<keymap version="1" name="TALON" parent="Default for GNOME">
+  <action id="ActivateAppQualityInsightsToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl alt released f2" />
+  </action>
+  <action id="ActivateDeviceManager2ToolWindow">
+    <keyboard-shortcut first-keystroke="shift ctrl alt 1" />
+  </action>
+  <action id="ActivateLogcatToolWindow">
+    <keyboard-shortcut first-keystroke="alt f11" />
+  </action>
+  <action id="ActivateRunningDevicesToolWindow">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f2" />
+  </action>
+  <action id="ActivateStudioBotToolWindow">
+    <keyboard-shortcut first-keystroke="shift alt f1" />
+  </action>
+  <action id="Logcat.ClearLogcat">
+    <keyboard-shortcut first-keystroke="shift ctrl alt 8" />
+  </action>
+  <action id="MaximizeEditorInSplit">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f3" />
+  </action>
+  <action id="MoveEditorToOppositeTabGroup">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f6" />
+  </action>
+  <action id="NextEditorTab" />
+  <action id="NextSplitter">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f5" />
+  </action>
+  <action id="PreviousEditorTab" />
+  <action id="ResourceExplorer.open">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f1" />
+  </action>
+  <action id="RevealIn">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f12" />
+  </action>
+  <action id="SearchEverywhere">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f9" />
+  </action>
+  <action id="Terminal.OpenInTerminal">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f7" />
+  </action>
+  <action id="ToggleZenMode">
+    <keyboard-shortcut first-keystroke="shift ctrl alt z" />
+  </action>
+  <action id="UpdateRunningApplication" />
+  <action id="android.deploy.ApplyChanges">
+    <keyboard-shortcut first-keystroke="ctrl f10" />
+  </action>
+  <action id="android.deploy.CodeSwap">
+    <keyboard-shortcut first-keystroke="ctrl alt f10" />
+  </action>
+  <action id="editRunConfigurations">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f10" />
+  </action>
+</keymap>
