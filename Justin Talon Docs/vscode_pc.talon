@@ -1,3 +1,5 @@
+os: windows
+os: linux
 app.name: Visual Studio Code
 app.name: Code
 -
@@ -7,11 +9,11 @@ settings: key(ctrl-,)
     key(ctrl-k)
     key(ctrl-s)
 
-explore: key(ctrl-shift-e)
-search: key(ctrl-shift-f)
-source control: key(ctrl-shift-g)
-debug: key(ctrl-shift-d)
-extensions: key(ctrl-shift-x)
+panel (explore|explorer): key(ctrl-shift-e)
+panel search: key(ctrl-shift-f)
+panel source control: key(ctrl-shift-g)
+panel debug: key(ctrl-shift-d)
+panel extensions: key(ctrl-shift-x)
 
 menu file: key(alt-f)
 menu edit: key(alt-e)

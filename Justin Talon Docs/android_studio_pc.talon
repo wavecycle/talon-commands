@@ -2,6 +2,8 @@
 # NOTE: seems like you can't mix up "app" and "app.name"
 
 # app.name: Android Studio
+os: windows
+os: linux
 app: Android Studio
 app: jetbrains
 # app.name: IntelliJ IDEA

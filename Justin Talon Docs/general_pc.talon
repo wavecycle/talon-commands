@@ -1,3 +1,5 @@
+os: windows
+os: linux
 -
 settings():
     key_wait = 8.0
@@ -11,6 +13,7 @@ grab right:
 grab up:
     key(shift-up)
 grab down:
+
     key(shift-down)
     
 jump left:
