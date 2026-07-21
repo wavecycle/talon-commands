@@ -1,0 +1,158 @@
+<keymap version="1" name="TALON" parent="$default">
+  <action id="$Copy" />
+  <action id="ActivateAppQualityInsightsToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl alt released f2" />
+  </action>
+  <action id="ActivateDebugToolWindow">
+    <keyboard-shortcut first-keystroke="meta 5" />
+  </action>
+  <action id="ActivateDeviceManager2ToolWindow">
+    <keyboard-shortcut first-keystroke="shift ctrl alt 1" />
+  </action>
+  <action id="ActivateFindToolWindow">
+    <keyboard-shortcut first-keystroke="meta 3" />
+  </action>
+  <action id="ActivateLogcatToolWindow">
+    <keyboard-shortcut first-keystroke="alt f11" />
+  </action>
+  <action id="ActivateProjectToolWindow">
+    <keyboard-shortcut first-keystroke="meta 1" />
+  </action>
+  <action id="ActivateRunToolWindow">
+    <keyboard-shortcut first-keystroke="meta 4" />
+  </action>
+  <action id="ActivateRunningDevicesToolWindow">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f2" />
+  </action>
+  <action id="ActivateStudioBotToolWindow">
+    <keyboard-shortcut first-keystroke="shift alt f1" />
+  </action>
+  <action id="ChangeSignature" />
+  <action id="CloseContent" />
+  <action id="CompileProject_renamedStub_201231177">
+    <keyboard-shortcut first-keystroke="ctrl f9" />
+  </action>
+  <action id="Console.Execute.Multiline" />
+  <action id="Diff.NextChange" />
+  <action id="Diff.PrevChange" />
+  <action id="DirDiffMenu.SynchronizeDiff.All" />
+  <action id="EditorCopy" />
+  <action id="EditorLookupDown" />
+  <action id="EditorLookupUp" />
+  <action id="EditorNextWord" />
+  <action id="EditorNextWordWithSelection" />
+  <action id="EditorPreviousWord" />
+  <action id="EditorPreviousWordWithSelection" />
+  <action id="EditorScrollDown" />
+  <action id="EditorScrollUp" />
+  <action id="EditorSplitLine" />
+  <action id="Find" />
+  <action id="FindUsagesInFile" />
+  <action id="FindWordAtCaret" />
+  <action id="KotlinShellExecute" />
+  <action id="List-selectFirstRowExtendSelection" />
+  <action id="List-selectLastRowExtendSelection" />
+  <action id="Logcat.ClearLogcat">
+    <keyboard-shortcut first-keystroke="shift ctrl alt 8" />
+  </action>
+  <action id="MaximizeEditorInSplit">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f3" />
+  </action>
+  <action id="MethodOverloadSwitchDown" />
+  <action id="MethodOverloadSwitchUp" />
+  <action id="MoveEditorToOppositeTabGroup">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f6" />
+  </action>
+  <action id="MoveStatementDown" />
+  <action id="MoveStatementUp" />
+  <action id="NextSplitter">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f5" />
+  </action>
+  <action id="QuickDocCopy" />
+  <action id="Replace" />
+  <action id="ResourceExplorer.open">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f1" />
+  </action>
+  <action id="RevealIn">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f12" />
+  </action>
+  <action id="SearchEverywhere">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f9" />
+  </action>
+  <action id="SearchEverywhere.NavigateToNextGroup">
+    <keyboard-shortcut first-keystroke="page_down" />
+  </action>
+  <action id="SearchEverywhere.NavigateToPrevGroup">
+    <keyboard-shortcut first-keystroke="page_up" />
+  </action>
+  <action id="ShowBookmarks" />
+  <action id="ShowErrorDescription" />
+  <action id="ShowProjectStructureSettings">
+    <keyboard-shortcut first-keystroke="meta semicolon" />
+  </action>
+  <action id="SpeedSearch">
+    <keyboard-shortcut first-keystroke="alt f3" />
+  </action>
+  <action id="SplitChooser.Duplicate" />
+  <action id="Stop">
+    <keyboard-shortcut first-keystroke="ctrl alt f2" />
+  </action>
+  <action id="Table-selectFirstColumn" />
+  <action id="Table-selectFirstColumnExtendSelection" />
+  <action id="Table-selectFirstRow">
+    <keyboard-shortcut first-keystroke="ctrl home" />
+  </action>
+  <action id="Table-selectFirstRowExtendSelection" />
+  <action id="Table-selectLastColumn" />
+  <action id="Table-selectLastColumnExtendSelection" />
+  <action id="Table-selectLastRow">
+    <keyboard-shortcut first-keystroke="ctrl end" />
+  </action>
+  <action id="Table-selectLastRowExtendSelection" />
+  <action id="Terminal.ClearPrompt" />
+  <action id="Terminal.CopySelectedText">
+    <keyboard-shortcut first-keystroke="ctrl insert" />
+  </action>
+  <action id="Terminal.LineDown" />
+  <action id="Terminal.LineUp" />
+  <action id="Terminal.OpenInTerminal">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f7" />
+  </action>
+  <action id="Terminal.SearchInCommandHistory" />
+  <action id="Terminal.SelectBlockAbove">
+    <keyboard-shortcut first-keystroke="up" />
+  </action>
+  <action id="Terminal.SelectLastBlock" />
+  <action id="Terminal.SelectPrompt" />
+  <action id="Terminal.SmartCommandExecution.Run" />
+  <action id="ToggleFullScreen">
+    <keyboard-shortcut first-keystroke="ctrl meta f" />
+  </action>
+  <action id="ToggleLineBreakpoint">
+    <keyboard-shortcut first-keystroke="ctrl alt f11" />
+  </action>
+  <action id="ToggleZenMode">
+    <keyboard-shortcut first-keystroke="shift ctrl alt z" />
+  </action>
+  <action id="UpdateRunningApplication" />
+  <action id="UsageFiltering.ReadAccess" />
+  <action id="ViewSource" />
+  <action id="android.deploy.ApplyChanges">
+    <keyboard-shortcut first-keystroke="ctrl f10" />
+  </action>
+  <action id="android.deploy.CodeSwap">
+    <keyboard-shortcut first-keystroke="ctrl alt f10" />
+  </action>
+  <action id="android.device.rotate.left">
+    <keyboard-shortcut first-keystroke="alt l" />
+  </action>
+  <action id="android.device.rotate.right">
+    <keyboard-shortcut first-keystroke="alt r" />
+  </action>
+  <action id="android.streaming.xr.location.in.space.z" />
+  <action id="android.streaming.xr.recenter" />
+  <action id="editRunConfigurations">
+    <keyboard-shortcut first-keystroke="shift ctrl alt f10" />
+  </action>
+  <action id="sml.KeepChange" />
+</keymap>

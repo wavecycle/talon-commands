@@ -1,11 +1,10 @@
 # Requires https://plugins.jetbrains.com/plugin/10504-voice-code-idea
-# NOTE: seems like you can't mix up "app" and "app.name"
+# Uses Talon Community repo, calls functions in jetbrains.py
 
-# app.name: Android Studio
+app: jetbrains
 os: mac
 app: Android Studio
-app: jetbrains
-# app.name: IntelliJ IDEA
+
 -
 
 # key_wait increases the delay when pressing keys (milliseconds)
@@ -14,6 +13,11 @@ settings():
     key_wait = 1.0
 
 # template words: shift ctrl alt
+
+# TESTING FUNCTION CALLS
+# comment test:  user.idea("comment_test")
+comment test: code.toggle_comment()
+panel test: user.idea("action ActivateProjectToolWindow")
 
 # IDE voice commands
 android settings: key(cmd-,)
@@ -66,8 +70,9 @@ panel device: key(ctrl-alt-shift-f12)
 [panel] gemini: key(alt-shift-f1)
 [panel] (emulator|robot): key(ctrl-alt-shift-f2)
 
-view next:				key(alt-shift-v)			
-[build] refresh:        key(ctrl-shift-f5)
+view (right|next):				key(alt-shift-right)			
+view (left|last):				key(alt-shift-left)			
+view refresh:        key(ctrl-shift-f5)
 # (tab|code) (last|left):	key(alt-left)
 code (last|left):	key(alt-left)
 # (tab|code) (next|right): key(alt-right)
@@ -106,8 +111,8 @@ refactor options:		key(ctrl-shift-alt-t)
 # [android] redo:			key(ctrl-shift-z)
 [android] synchronize: key(ctrl-shift-o)
 
-rotate left: key(ctrl-l)
-rotate right: key(ctrl-r)
+rotate left: key(alt-l)
+rotate right: key(alt-r)
 (emulator|robot) home: key(ctrl-shift-h)
 (emulator|robot) overview: key(ctrl-shift-w)
 (emulator|robot|go) back: key(ctrl-shift-b)
@@ -122,17 +127,19 @@ test run:				key(ctrl-shift-f10)
 [android] apply:		key(ctrl-f10)
 [android] debug:		key(alt-shift-f9)
 [android] resume:		key(f9)
-stop [it]:			key(ctrl-f2)
+stop [it]:			key(ctrl-alt-f2)
 [android] evaluate:		key(alt-f8)
 step into:				key(f7)
 step over:				key(f8)
 step cursor:			key(alt-shift-9)
-breakpoint toggle:		key(ctrl-f8)
+breakpoint toggle:		key(ctrl-alt-f11)
 [new] watch:		key(insert)
 warning next:			key(f2)
 warning previous:		key(shift-f2)
 clear logcat: key(ctrl-alt-shift-8)
 open files: key(ctrl-alt-shift-f12)
+
+
 open terminal: key(ctrl-alt-shift-f7)
 
 # compound commands

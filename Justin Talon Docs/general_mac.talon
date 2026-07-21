@@ -5,6 +5,7 @@ settings():
     key_wait = 8.0
 
 return: key(enter)
+[context] menu key: key(ctrl-return)
 
 grab left: key(alt-shift-left)
 grab right: key(alt-shift-right)
@@ -14,4 +15,4 @@ jump left: key(alt-left)
 jump right: key(alt-right)
     
 menu top: key(ctrl-shift-f2)
-(full|maximize) screen: key(ctrl-cmd-f)
+screen (full|maximize): key(ctrl-cmd-f)
