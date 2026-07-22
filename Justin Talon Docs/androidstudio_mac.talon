@@ -7,196 +7,198 @@ app: Android Studio
 
 -
 
-# key_wait increases the delay when pressing keys (milliseconds)
-# this is useful if an app seems to jumble or drop keys
+# user.idea("action ")
+# this is useful if an app seems to jumble or drop user.idea("action ")
 settings():
-    key_wait = 1.0
+    user.idea("action ")
 
 # template words: shift ctrl alt
 
 # TESTING FUNCTION CALLS
 # comment test:  user.idea("comment_test")
+#  user.idea("action ")
 comment test: code.toggle_comment()
 panel test: user.idea("action ActivateProjectToolWindow")
 
 # IDE voice commands
-android settings: key(cmd-,)
-project structure: key(cmd-;)
-rebuild [project]: key(ctrl-f9)
-zen mode: key(ctrl-alt-shift-z)
-[android] info:	key(alt-enter)
-[info] suggestion: key(alt-shift-enter)
-[android] help:	key(ctrl-q)
-[android] search: key(ctrl-shift-a)
-[search] everywhere: key(ctrl-alt-shift-f9)
-[search] (file|files): key(ctrl-shift-f)
-regex: key(alt-x)
+android settings:  user.idea("action ShowSettings")
+project structure: user.idea("action ShowProjectStructureSettings")
+rebuild [project]: user.idea("action ")
+zen mode: user.idea("action ToggleZenMode")
+[android] info:	user.idea("action ")
+[info] suggestion: user.idea("action ")
+[android] help:	user.idea("action ")
+[android] search: user.idea("action ")
+[search] everywhere: user.idea("action SearchEverywhere")
+[search] (file|files): user.idea("action ")
+regex: user.idea("action ")
 
-duplicate [line]: key(ctrl-d)
-android case: key(ctrl-shift-u)
+duplicate [line]: user.idea("action ")
+android case: user.idea("action ")
 
-device manager: key(ctrl-alt-shift-1)
-[select] device: key(alt-shift-f11)
+menu file: user.idea("action FileMenu")
+menu edit: user.idea("action EditMenu")
+menu view: user.idea("action ViewMenu")
+menu navigate: user.idea("action GoToMenu")
+menu code: user.idea("action CodeMenu")
+menu (refactor|refactoring): user.idea("action RefactoringMenu")
+menu build:	user.idea("action BuildMenu")
+menu run: user.idea("action RunMenu")
+menu tools: user.idea("action ToolsMenu")
+menu git: user.idea("action VcsGroup")
+menu window: user.idea("action WindowMenu")
+menu help: user.idea("action HelpMenu")
 
-menu file: key(alt-f)
-menu edit: key(alt-e)
-menu view: key(alt-v)
-menu navigate: key(alt-n)
-menu code: key(alt-c)
-menu analyze: key(alt-z)
-menu refactor: key(alt-r)
-menu build:	key(alt-b)
-menu run: key(alt-u)
-menu tools: key(alt-t)
-menu git: key(alt-g)
-menu window: key(alt-w)
-menu help: key(alt-h)
+panel project:  user.idea("action ActivateProjectToolWindow")
+panel favorites: user.idea("action ActivateFavoritesToolWindow")
+panel find: user.idea("action ActivateFindToolWindow")
+panel run: user.idea("action ActivateRunToolWindow")
+panel debug: user.idea("action ActivateDebugToolWindow")
+panel [app] quality [insights]: user.idea("action ActivateAppQualityInsightsToolWindow")
+panel problems: user.idea("action ActivateProblemsViewToolWindow")
+panel to do: user.idea("action ActivateTODOToolWindow")
+panel structure: user.idea("action ActivateStructureToolWindow")
+panel git: user.idea("action ActivateVersionControlToolWindow")
+panel commit: user.idea("action ActivateCommitToolWindow")
+panel logcat: user.idea("action ActivateLogcatToolWindow")
+panel terminal: user.idea("action ActivateTerminalToolWindow")
+panel resource [manager]: user.idea("action ResourceExplorer.open")
+panel inspection: user.idea("action ")
+[panel] device manager:  user.idea("action ActivateDeviceManager2ToolWindow")
+[select] device: user.idea("action ")
+panel device: user.idea("action ActivateRunningDevicesToolWindow")
+[panel] gemini: user.idea("action ActivateStudioBotToolWindow")
+[panel] (emulator|robot): user.idea("action ")
 
-panel project: key(cmd-1)
-panel favorites: key(alt-2)
-panel find:	key(cmd-3)
-panel run: key(cmd-4)
-panel debug: key(cmd-5)
-panel [app] quality [insights]:key(ctrl-alt-f2)
-panel problems:	key(alt-6)
-panel structure: key(alt-7)
-panel git: key(alt-9)
-panel commit: key(alt-0)
-panel logcat: key(alt-f11)
-panel terminal: key(alt-f12)
-panel resource [manager]: key(ctrl-alt-shift-f1)
-panel inspection: key(ctrl-alt-shift-f11)
-panel device: key(ctrl-alt-shift-f12)
-[panel] gemini: key(alt-shift-f1)
-[panel] (emulator|robot): key(ctrl-alt-shift-f2)
+view (right|next):				user.idea("action ")
+view (left|last):				user.idea("action ")
+view refresh:        user.idea("action ")
+# (tab|code) (last|left):	user.idea("action ")
+code (last|left):	user.idea("action ")
+# (tab|code) (next|right): user.idea("action ")
+code (next|right): user.idea("action ")
+(tab|code) close:				user.idea("action ")
+[next] splitter: user.idea("action NextSplitter")
+move splitter: user.idea("action MoveEditorToOppositeTabGroup")
+maximize [tab]:  user.idea("action MaximizeEditorInSplit")
+code reformat:  user.idea("action ")
+block up:				 user.idea("action ")      
+block down:				 user.idea("action ")
+matching [bracket]:     user.idea("action ")
+(navigate|jump): user.idea("action ")
 
-view (right|next):				key(alt-shift-right)			
-view (left|last):				key(alt-shift-left)			
-view refresh:        key(ctrl-shift-f5)
-# (tab|code) (last|left):	key(alt-left)
-code (last|left):	key(alt-left)
-# (tab|code) (next|right): key(alt-right)
-code (next|right): key(alt-right)
-(tab|code) close:				key(ctrl-f4)
-[next] splitter: key(ctrl-alt-shift-f5)
-move splitter: key(ctrl-alt-shift-f6)
-maximize [tab]:key(ctrl-alt-shift-f3)
-code reformat: key(ctrl-alt-l)
-block up:				key(alt-up)
-block down:				key(alt-down)
-matching [bracket]:     key(ctrl-shift-m)
-(navigate|jump): key(ctrl-g)
+comment line:			user.idea("action ")
+comment block:			user.idea("action ")
+android select:			user.idea("action ")
+fold close:				user.idea("action ")
+fold open:				user.idea("action ")
+fold all:				user.idea("action ")
 
-comment line:			key(ctrl-/)
-comment block:			key(ctrl-shift-/)
-android select:			key(ctrl-w)
-fold close:				key(ctrl-minus)
-fold open:				key(ctrl-=)
-fold all:				key(ctrl-shift-=)
+difference next: user.idea("action ")
+difference previous: user.idea("action ")
 
-difference next: key(f7)
-difference previous: key(shift-f7)
+refactor rename:		user.idea("action ")
+refactor function:		user.idea("action ")
+refactor options:		user.idea("action ")
 
-refactor rename:		key(shift-f6)
-refactor function:		key(ctrl-alt-m)
-refactor options:		key(ctrl-shift-alt-t)
+[android] override:		user.idea("action ")
+[android] implement:	user.idea("action ")
+[android] generate:		user.idea("action ")
+[android] construct:	user.idea("action ")
+[android] members:		user.idea("action ")
+[android] block:		user.idea("action ")
+# [android] undo:			user.idea("action ")
+# [android] redo:			user.idea("action ")
+[android] synchronize: user.idea("action ")
 
-[android] override:		key(ctrl-o)
-[android] implement:	key(ctrl-i)
-[android] generate:		key(alt-insert)
-[android] construct:	key(ctrl-shift-enter)
-[android] members:		key(ctrl-f12)
-[android] block:		key(ctrl-alt-t)
-# [android] undo:			key(ctrl-z)
-# [android] redo:			key(ctrl-shift-z)
-[android] synchronize: key(ctrl-shift-o)
+android.device.rotate.left
+rotate left: user.idea("action ")
+android.device.rotate.right
+rotate right: user.idea("action ")
+(emulator|robot) home: user.idea("action ")
+(emulator|robot) overview: user.idea("action ")
+(emulator|robot|go) back: user.idea("action ")
 
-rotate left: key(alt-l)
-rotate right: key(alt-r)
-(emulator|robot) home: key(ctrl-shift-h)
-(emulator|robot) overview: key(ctrl-shift-w)
-(emulator|robot|go) back: key(ctrl-shift-b)
+[android] menu:			user.idea("action ")
+[android] hierarchy:	user.idea("action ")
+[android] usage:		user.idea("action ")
 
-[android] menu:			key(ctrl-space)
-[android] hierarchy:	key(ctrl-h)
-[android] usage:		key(ctrl-b)	
-
-run [it]:			key(shift-f10)
-edit [config|configuration|configurations]: key(ctrl-alt-shift-f10)
-test run:				key(ctrl-shift-f10)
-[android] apply:		key(ctrl-f10)
-[android] debug:		key(alt-shift-f9)
-[android] resume:		key(f9)
-stop [it]:			key(ctrl-alt-f2)
-[android] evaluate:		key(alt-f8)
-step into:				key(f7)
-step over:				key(f8)
-step cursor:			key(alt-shift-9)
-breakpoint toggle:		key(ctrl-alt-f11)
-[new] watch:		key(insert)
-warning next:			key(f2)
-warning previous:		key(shift-f2)
-clear logcat: key(ctrl-alt-shift-8)
-open files: key(ctrl-alt-shift-f12)
+run [it]:			user.idea("action Run")
+edit [config|configuration|configurations]: user.idea("action editRunConfigurations")
+test run:				user.idea("action ")
+[android] apply:		user.idea("action ")
+[android] debug:		user.idea("action ")
+[android] resume:		user.idea("action ")
+stop [it]:			    user.idea("action ")
+[android] evaluate:		user.idea("action ")
+step into:				user.idea("action ")
+step over:				user.idea("action ")
+step cursor:			user.idea("action ")
+breakpoint toggle:		user.idea("action ")
+[new] watch:		user.idea("action ")
+warning next:			user.idea("action ")
+warning previous:		user.idea("action ")
+clear logcat: user.idea("action Logcat.ClearLogcat") # IS NOT WORKING
+open files: user.idea("action ")
 
 
-open terminal: key(ctrl-alt-shift-f7)
+open terminal: user.idea("action ")
 
 # compound commands
 # (navigate|jump) <number_small>:
-    # (navigate|jump): key(ctrl-g)
-    # key(delete)
-    # key(delete)
+    # (navigate|jump): user.idea("action ")
+    # user.idea("action ")
+    # user.idea("action ")
     # insert(number_small)
-    # key(enter)
+    # user.idea("action ")
 
 
 
 android tag:				
     'private const val TAG = ""'
-    key(left:1)
+    user.idea("action ")
 android invoke:			
     'suspend operator fun invoke()'
-    key(left:1)
+    user.idea("action ")
 (todo|to do):
     '// Todo: '
 log verbose:				
     'Log.v("", "")'
-    key(left:2)
+    user.idea("action ")
 log debug:				
     'Log.d("", "")'
-    key(left:2)
+    user.idea("action ")
 log info:
     'Log.i("", "")'
-    key(left:2)
+    user.idea("action ")
 log warning:				
     'Log.w("", "")'
-    key(left:2)
+    user.idea("action ")
 log error:				
     'Log.e("", "")'
-    key(left:2)
+    user.idea("action ")
             
 throw exception:			
     "throw Exception()"
-    key(left:1)
+    user.idea("action ")
 throw state:				
     "throw IllegalStateException()"
-    key(left:1)
+    user.idea("action ")
 throw argument:			
     "throw IllegalArgumentException()"
-    key(left:1)
+    user.idea("action ")
 throw null:				
     "throw NullPointerException()"
-    key(left:1)
+    user.idea("action ")
 throw cast:				
     "throw ClassCastException()"
-    key(left:1)
+    user.idea("action ")
 throw jason:				
     "throw JSONException()"
-    key(left:1)
+    user.idea("action ")
 throw file:				
     "throw FileNotFoundException()"
-    key(left:1)
+    user.idea("action ")
 
 
 arrow: "->"
