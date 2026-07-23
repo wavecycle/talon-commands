@@ -21,4 +21,6 @@ warning next: key(f8)
 splitter last: key(ctrl-alt-left)
 splitter [next]: key(ctrl-alt-right)
 
+chat: key(ctrl-cmd-i)
+
 code test: user.format_code()

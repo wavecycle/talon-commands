@@ -17,15 +17,15 @@ settings():
 # TESTING FUNCTION CALLS
 # comment test:  user.idea("comment_test")
 #  user.idea("action ")
-comment test: code.toggle_comment()
-panel test: user.idea("action ActivateProjectToolWindow")
+# comment test: code.toggle_comment()
+# panel test: user.idea("action ActivateProjectToolWindow")
 
 # IDE voice commands
-android settings:  user.idea("action ShowSettings")
+android settings: user.idea("action ShowSettings")
 project structure: user.idea("action ShowProjectStructureSettings")
-rebuild [project]: user.idea("action ")
+rebuild [project]: user.idea("action ActivateProblemsViewToolWindow")
 zen mode: user.idea("action ToggleZenMode")
-[android] info:	user.idea("action ")
+[android] info:	user.idea("action ShowIntentionActions")
 [info] suggestion: user.idea("action ")
 [android] help:	user.idea("action ")
 [android] search: user.idea("action ")
@@ -68,7 +68,7 @@ panel inspection: user.idea("action ")
 [select] device: user.idea("action ")
 panel device: user.idea("action ActivateRunningDevicesToolWindow")
 [panel] gemini: user.idea("action ActivateStudioBotToolWindow")
-[panel] (emulator|robot): user.idea("action ")
+[panel] (emulator|robot): user.idea("action ActivateRunningDevicesToolWindow")
 
 view (right|next):				user.idea("action ")
 view (left|last):				user.idea("action ")
@@ -111,12 +111,10 @@ refactor options:		user.idea("action ")
 # [android] redo:			user.idea("action ")
 [android] synchronize: user.idea("action ")
 
-android.device.rotate.left
-rotate left: user.idea("action ")
-android.device.rotate.right
-rotate right: user.idea("action ")
-(emulator|robot) home: user.idea("action ")
-(emulator|robot) overview: user.idea("action ")
+rotate left: user.idea("action android.device.rotate.left")
+rotate right: user.idea("action android.device.rotate.right")
+(emulator|robot) home: user.idea("action android.device.home.button")
+(emulator|robot) overview: user.idea("action android.device.overview.button")
 (emulator|robot|go) back: user.idea("action ")
 
 [android] menu:			user.idea("action ")
@@ -124,22 +122,27 @@ rotate right: user.idea("action ")
 [android] usage:		user.idea("action ")
 
 run [it]:			user.idea("action Run")
+stop test:			    user.idea("action StopExecution") # DOESN'T WORK
 edit [config|configuration|configurations]: user.idea("action editRunConfigurations")
 test run:				user.idea("action ")
 [android] apply:		user.idea("action ")
-[android] debug:		user.idea("action ")
+[android] debug:		user.idea("action Debug")
 [android] resume:		user.idea("action ")
-stop [it]:			    user.idea("action ")
 [android] evaluate:		user.idea("action ")
-step into:				user.idea("action ")
-step over:				user.idea("action ")
-step cursor:			user.idea("action ")
-breakpoint toggle:		user.idea("action ")
-[new] watch:		user.idea("action ")
-warning next:			user.idea("action ")
-warning previous:		user.idea("action ")
-clear logcat: user.idea("action Logcat.ClearLogcat") # IS NOT WORKING
+# step into:				user.idea("action ")
+# step over:				user.idea("action ")
+# step cursor:			user.idea("action ")
+# breakpoint toggle:		user.idea("action ")
+[new|add] watch:		user.idea("action XDebugger.NewWatch")
+warning next:			user.idea("action GotoNextError")
+warning previous:		user.idea("action GotoPreviousError")
+clear logcat:   user.idea("action Logcat.ClearLogcat") # DOESN'T WORK
 open files: user.idea("action ")
+# Say "special click" to trigger the macro
+action click:
+    key("ctrl-alt:down")
+    mouse_click(0)
+    key("ctrl-alt:up")
 
 
 open terminal: user.idea("action ")
