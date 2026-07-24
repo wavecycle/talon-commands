@@ -5,8 +5,8 @@ ctx.matches = r"""
 app: jetbrains
 """
 
-@ctx.action_class("code")
-class CodeActions:
-    # talon code actions
-    def comment_test():
-        actions.user.idea("action CommentByLineComment")
+# @ctx.action_class("code")
+# class CodeActions:
+#     # talon code actions
+#     def comment_test():
+#         actions.user.idea("action CommentByLineComment")
