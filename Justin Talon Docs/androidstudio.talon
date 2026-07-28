@@ -24,10 +24,9 @@ zen mode: user.idea("action ToggleZenMode")
 [search] everywhere: user.idea("action SearchEverywhere")
 # [search] (file|files): user.idea("action SearchFiles")
 [search] actions: user.idea("action GotoAction")
-regex: user.idea("action ")
-
-# duplicate [line]: user.idea("action EditorDuplicate")
 android case: user.idea("action ")
+## select camel (left|right): calls jetbrains.talon
+## go camel (left|right): calls jetbrains.talon
 
 menu file: user.idea("action FileMenu")
 menu edit: user.idea("action EditMenu")
@@ -72,14 +71,15 @@ code (next|right): user.idea("action ")
 move splitter: user.idea("action MoveEditorToOppositeTabGroup")
 maximize [tab]:  user.idea("action MaximizeEditorInSplit")
 code reformat:  user.idea("action ReformatCode")
-# go next function: calls jetbrains.talon CORRECT THIS
-# go last function: calls jetbrains.talon CORRECT THIS
+## fix imports: calls jetbrains.talon
+[go] next (method | function): user.idea("action MethodDown")
+[go] last (method | function): user.idea("action MethodUp")
 (navigate|jump): user.idea("action ")
 
 comment line:			user.idea("action CommentByLineComment")
 comment block:			user.idea("action CommentByBlockComment")
-select more:			user.idea("action EditorSelectWord")
-select less:			user.idea("action EditorUnSelectWord")
+# select more:			user.idea("action EditorSelectWord")
+# select less:			user.idea("action EditorUnSelectWord")
 fold close:				user.idea("action CollapseRegion")
 fold open:				user.idea("action ExpandRegion")
 fold all:				user.idea("action ExpandAllRegions")
@@ -111,26 +111,31 @@ rotate right: user.idea("action android.device.rotate.right")
 [android] (menu|complete|completion): user.idea("action CodeCompletion")
 [android] hierarchy:	user.idea("action TypeHierarchy")
 [android] usage:		user.idea("action FindUsages")
+## go declaration: calls jetbrains.talon
 
 warning next:			user.idea("action GotoNextError")
 warning previous:		user.idea("action GotoPreviousError")
+## fix (last|next) (error|air): calls jetbrains.talon
 run [it]:			user.idea("action Run")
-stop now: user.idea("execute Stop")
+stop now: user.idea("execute Android.StopApp")
 edit [config|configuration|configurations]: user.idea("action editRunConfigurations")
 test run:				user.idea("action ")
 [android] apply:		user.idea("action [android] resume:		user.idea("action Android.ApplyChangesAndRestartActivity")")
 [android] resume:		user.idea("action android.deploy.ApplyChanges")
 [android] debug:		user.idea("action Debug")
 [android] evaluate:		user.idea("action EvaluateExpression")
-# step into: calls jetbrains.talon
-# step over: calls jetbrains.talon
-# step smart: calls jetbrains.talon
-# step to line: calls jetbrains.talon
-# toggle breakpoint: calls jetbrains.talon
-[new|add] watch:		user.idea("action XDebugger.NewWatch")
-clear logcat:   user.idea("action Android.Logcat.ClearLogcat") # DOESN'T WORK
+## step into: calls jetbrains.talon
+## step over: calls jetbrains.talon
+## step smart: calls jetbrains.talon
+## step to line: calls jetbrains.talon
+## toggle breakpoint: calls jetbrains.talon
+[new|add] watch: user.idea("action XDebugger.NewWatch")
+clear test: user.idea("action Logcat.Clear")
+# clear logcat:   user.idea("action Android.Logcat.ClearLog") # DOESN'T WORK
+
 open file: user.idea("action ShowFilePath")
-open explorer: user.idea("action ShowInExplorer")
+open explorer: user.idea("action ShowInExplorer") # DOESN'T WORK
+
 # Say "special click" to trigger the macro
 action click:
     key("ctrl-alt:down")
@@ -205,6 +210,3 @@ italics close: "&lt;/i>"
 underline open: "&lt;u>"
 underline close: "&lt;/u>"
 line break: "&lt;br/>"
-
-
-# commands from jetbrains.talon
