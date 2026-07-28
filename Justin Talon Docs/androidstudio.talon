@@ -10,18 +10,10 @@ app: Android Studio
 # this is useful if an app seems to jumble or drop user.idea("action ")
 settings():
     user.idea("action ")
-
 # template words: shift ctrl alt
-
-# TESTING FUNCTION CALLS
-# comment test:  user.idea("comment_test")
-#  user.idea("action ")
-# comment test: code.toggle_comment()
-# panel test: user.idea("action ActivateProjectToolWindow")
 
 # IDE voice commands
 # android settings: user.idea("action Preferences") # DOESN'T WORK
-keymap test: user.idea("action Keymap.SearchByShortcut")
 
 project structure: user.idea("action ShowProjectStructureSettings")
 rebuild [project]: user.idea("action ActivateProblemsViewToolWindow")
@@ -80,8 +72,8 @@ code (next|right): user.idea("action ")
 move splitter: user.idea("action MoveEditorToOppositeTabGroup")
 maximize [tab]:  user.idea("action MaximizeEditorInSplit")
 code reformat:  user.idea("action ReformatCode")
-block up:				 user.idea("action ")      
-block down:				 user.idea("action ")
+# go next function: calls jetbrains.talon CORRECT THIS
+# go last function: calls jetbrains.talon CORRECT THIS
 (navigate|jump): user.idea("action ")
 
 comment line:			user.idea("action CommentByLineComment")
@@ -120,31 +112,33 @@ rotate right: user.idea("action android.device.rotate.right")
 [android] hierarchy:	user.idea("action TypeHierarchy")
 [android] usage:		user.idea("action FindUsages")
 
+warning next:			user.idea("action GotoNextError")
+warning previous:		user.idea("action GotoPreviousError")
 run [it]:			user.idea("action Run")
 stop now: user.idea("execute Stop")
 edit [config|configuration|configurations]: user.idea("action editRunConfigurations")
 test run:				user.idea("action ")
-[android] apply:		user.idea("action ")
+[android] apply:		user.idea("action [android] resume:		user.idea("action Android.ApplyChangesAndRestartActivity")")
+[android] resume:		user.idea("action android.deploy.ApplyChanges")
 [android] debug:		user.idea("action Debug")
-[android] resume:		user.idea("action ")
-[android] evaluate:		user.idea("action ")
-# step into:				user.idea("action ")
-# step over:				user.idea("action ")
-# step cursor:			user.idea("action ")
-# breakpoint toggle:		user.idea("action ")
+[android] evaluate:		user.idea("action EvaluateExpression")
+# step into: calls jetbrains.talon
+# step over: calls jetbrains.talon
+# step smart: calls jetbrains.talon
+# step to line: calls jetbrains.talon
+# toggle breakpoint: calls jetbrains.talon
 [new|add] watch:		user.idea("action XDebugger.NewWatch")
-warning next:			user.idea("action GotoNextError")
-warning previous:		user.idea("action GotoPreviousError")
 clear logcat:   user.idea("action Android.Logcat.ClearLogcat") # DOESN'T WORK
-open files: user.idea("action ")
+open file: user.idea("action ShowFilePath")
+open explorer: user.idea("action ShowInExplorer")
 # Say "special click" to trigger the macro
 action click:
     key("ctrl-alt:down")
     mouse_click(0)
     key("ctrl-alt:up")
 
-
-open terminal: user.idea("action ")
+# THIS DOESN'T WORK YET
+# open terminal: user.idea("Terminal.OpenInTerminal")
 
 # compound commands
 # (navigate|jump) <number_small>:
@@ -153,8 +147,6 @@ open terminal: user.idea("action ")
     # user.idea("action ")
     # insert(number_small)
     # user.idea("action ")
-
-
 
 android tag:				
     'private const val TAG = ""'
