@@ -22,9 +22,8 @@ zen mode: user.idea("action ToggleZenMode")
 # [android] help:	user.idea("action QuickJavaDocs")
 # [android] search: user.idea("action ")
 [search] everywhere: user.idea("action SearchEverywhere")
-# [search] (file|files): user.idea("action SearchFiles")
 [search] actions: user.idea("action GotoAction")
-android case: user.idea("action ")
+# android case: user.idea("action ")
 ## select camel (left|right): calls jetbrains.talon
 ## go camel (left|right): calls jetbrains.talon
 
@@ -55,18 +54,16 @@ panel commit: user.idea("action ActivateCommitToolWindow")
 panel logcat: user.idea("action ActivateLogcatToolWindow")
 panel terminal: user.idea("action ActivateTerminalToolWindow")
 panel resource [manager]: user.idea("action ResourceExplorer.open")
-panel inspection: user.idea("action ")
+panel inspection: user.idea("action ActivateAppInspectionToolWindow")
 [panel] device manager:  user.idea("action ActivateDeviceManager2ToolWindow")
 [select] device: user.idea("action DeviceAndSnapshotComboBox")
 panel device: user.idea("action ActivateRunningDevicesToolWindow")
 [panel] gemini: user.idea("action ActivateStudioBotToolWindow")
 [panel] (emulator|robot): user.idea("action ActivateRunningDevicesToolWindow")
 
-# (tab|code) (last|left):	user.idea("action ")
-code (last|left):	user.idea("action ")
-# (tab|code) (next|right): user.idea("action ")
-code (next|right): user.idea("action ")
-(tab|code) close:				user.idea("action ")
+(tab|code) (last|left):	user.idea("action PreviousTab")
+(tab|code) (next|right): user.idea("action NextTab")
+(tab|code) close: user.idea("action CloseContent")
 [next] splitter: user.idea("action NextSplitter")
 move splitter: user.idea("action MoveEditorToOppositeTabGroup")
 maximize [tab]:  user.idea("action MaximizeEditorInSplit")
@@ -74,7 +71,7 @@ code reformat:  user.idea("action ReformatCode")
 ## fix imports: calls jetbrains.talon
 [go] next (method | function): user.idea("action MethodDown")
 [go] last (method | function): user.idea("action MethodUp")
-(navigate|jump): user.idea("action ")
+## go <line number>: calls jetbrains.talon
 
 comment line:			user.idea("action CommentByLineComment")
 comment block:			user.idea("action CommentByBlockComment")
@@ -84,22 +81,17 @@ fold close:				user.idea("action CollapseRegion")
 fold open:				user.idea("action ExpandRegion")
 fold all:				user.idea("action ExpandAllRegions")
 
-difference next: user.idea("action ")
-difference previous: user.idea("action ")
+# difference next: user.idea("action ")
+# difference previous: user.idea("action ")
 
 refactor rename:		user.idea("action RenameElement")
 refactor filename:		user.idea("action RenameFile")
 refactor function:		user.idea("action ExtractFunction")
-# refactor options:		user.idea("action ")
 
 [android] override:		user.idea("action OverrideMethods")
 [android] implement:	user.idea("action ImplementMethods")
 [android] generate:		user.idea("action Generate")
-[android] construct:	user.idea("action ")
-[android] members:		user.idea("action ")
-[android] block:		user.idea("action ")
-# [android] undo:			user.idea("action ")
-# [android] redo:			user.idea("action ")
+[android] (construct|complete statement): user.idea("action EditorCompleteStatement")
 [android] synchronize: user.idea("action Android.SyncProject")
 
 rotate left: user.idea("action android.device.rotate.left")
@@ -117,24 +109,24 @@ warning next:			user.idea("action GotoNextError")
 warning previous:		user.idea("action GotoPreviousError")
 ## fix (last|next) (error|air): calls jetbrains.talon
 run [it]:			user.idea("action Run")
-stop now: user.idea("execute Android.StopApp")
+# stop now: user.idea("execute Android.StopApp")
 edit [config|configuration|configurations]: user.idea("action editRunConfigurations")
-test run:				user.idea("action ")
 [android] apply:		user.idea("action [android] resume:		user.idea("action Android.ApplyChangesAndRestartActivity")")
 [android] resume:		user.idea("action android.deploy.ApplyChanges")
 [android] debug:		user.idea("action Debug")
 [android] evaluate:		user.idea("action EvaluateExpression")
+## toggle breakpoint: calls jetbrains.talon
 ## step into: calls jetbrains.talon
 ## step over: calls jetbrains.talon
 ## step smart: calls jetbrains.talon
 ## step to line: calls jetbrains.talon
-## toggle breakpoint: calls jetbrains.talon
+## continue: calls jetbrains.talon
 [new|add] watch: user.idea("action XDebugger.NewWatch")
-clear test: user.idea("action Logcat.Clear")
 # clear logcat:   user.idea("action Android.Logcat.ClearLog") # DOESN'T WORK
 
 open file: user.idea("action ShowFilePath")
 open explorer: user.idea("action ShowInExplorer") # DOESN'T WORK
+# open terminal:
 
 # Say "special click" to trigger the macro
 action click:
