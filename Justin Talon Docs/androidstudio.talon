@@ -19,11 +19,9 @@ project structure: user.idea("action ShowProjectStructureSettings")
 rebuild [project]: user.idea("action ActivateProblemsViewToolWindow")
 zen mode: user.idea("action ToggleZenMode")
 [android] info:	user.idea("action ShowIntentionActions")
-# [android] help:	user.idea("action QuickJavaDocs")
-# [android] search: user.idea("action ")
 [search] everywhere: user.idea("action SearchEverywhere")
 [search] actions: user.idea("action GotoAction")
-# android case: user.idea("action ")
+## recent: calls jetbrains.talon
 ## select camel (left|right): calls jetbrains.talon
 ## go camel (left|right): calls jetbrains.talon
 
@@ -75,8 +73,8 @@ code reformat:  user.idea("action ReformatCode")
 
 comment line:			user.idea("action CommentByLineComment")
 comment block:			user.idea("action CommentByBlockComment")
-# select more:			user.idea("action EditorSelectWord")
-# select less:			user.idea("action EditorUnSelectWord")
+## select more:	calls jetbrains.talon
+## select less: calls jetbrains.talon
 fold close:				user.idea("action CollapseRegion")
 fold open:				user.idea("action ExpandRegion")
 fold all:				user.idea("action ExpandAllRegions")
@@ -122,20 +120,19 @@ edit [config|configuration|configurations]: user.idea("action editRunConfigurati
 ## step to line: calls jetbrains.talon
 ## continue: calls jetbrains.talon
 [new|add] watch: user.idea("action XDebugger.NewWatch")
-# clear logcat:   user.idea("action Android.Logcat.ClearLog") # DOESN'T WORK
 
 open file: user.idea("action ShowFilePath")
-open explorer: user.idea("action ShowInExplorer") # DOESN'T WORK
-# open terminal:
+[show] in project [panel]: user.idea("action SelectInProjectView")
+
+# clear logcat:   user.idea("action Android.Logcat.ClearLog") DOESN'T WORK
+# explorer test: user.idea("action RevealIn") DOESN'T WORK
+# open terminal: user.idea("action OpenInTerminal") DOESN'T WORK
 
 # Say "special click" to trigger the macro
 action click:
     key("ctrl-alt:down")
     mouse_click(0)
     key("ctrl-alt:up")
-
-# THIS DOESN'T WORK YET
-# open terminal: user.idea("Terminal.OpenInTerminal")
 
 # compound commands
 # (navigate|jump) <number_small>:
