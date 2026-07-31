@@ -16,7 +16,6 @@ settings():
 
 stop [it]: key(cmd-f2)
 [android] settings: key(cmd-,)
-
 [search] (file|files): key(cmd-shift-f)
 
 [info] suggestion: key(shift-alt-enter)
