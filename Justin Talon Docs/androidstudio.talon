@@ -1,6 +1,7 @@
 # Requires https://plugins.jetbrains.com/plugin/10504-voice-code-idea
 # Uses Talon Community repo, calls functions in jetbrains.py
 
+
 app: jetbrains
 app: Android Studio
 
@@ -109,7 +110,7 @@ warning previous:		user.idea("action GotoPreviousError")
 run [it]:			user.idea("action Run")
 # stop now: user.idea("execute Android.StopApp")
 edit [config|configuration|configurations]: user.idea("action editRunConfigurations")
-[android] apply:		user.idea("action [android] resume:		user.idea("action Android.ApplyChangesAndRestartActivity")")
+[android] apply:		user.idea("action Android.ApplyChangesAndRestartActivity")
 [android] resume:		user.idea("action android.deploy.ApplyChanges")
 [android] debug:		user.idea("action Debug")
 [android] evaluate:		user.idea("action EvaluateExpression")
