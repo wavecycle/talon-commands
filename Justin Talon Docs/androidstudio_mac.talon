@@ -27,3 +27,8 @@ view (left|last): key(ctrl-shift-left)
 view refresh: key(cmd-alt-shift-r)
 matching [bracket]: key(ctrl-m)
 regex: key(ctrl-alt-x)
+
+# MUST ASSIGN IN: ANDROID STUDIO > SETTINGS > KEYMAPS
+clear logcat: key(ctrl-alt-1)
+open [in] terminal: key(ctrl-alt-2)
+open [in] (explorer|finder): key(ctrl-alt-3)
