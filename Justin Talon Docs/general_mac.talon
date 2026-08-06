@@ -6,6 +6,7 @@ settings():
 
 return: key(enter)
 [context] menu key: key(ctrl-return)
+open [file|folder]: key(cmd-down)
 
 grab left: key(alt-shift-left)
 grab right: key(alt-shift-right)
