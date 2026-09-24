@@ -14,6 +14,10 @@ settings():
 
 # template words: shift ctrl alt
 
+panel claude: key(cmd-esc)
+claude (reference|ref): key(cmd-option-k)
+claude app: key(cmd-shift-space)
+
 stop [it]: key(cmd-f2)
 [android] settings: key(cmd-,)
 [search] (file|files): key(cmd-shift-f)

@@ -72,6 +72,7 @@ code reformat:  user.idea("action ReformatCode")
 [go] last (method | function): user.idea("action MethodUp")
 ## go <line number>: calls jetbrains.talon
 
+replace it: user.idea("action Replace")
 comment line:			user.idea("action CommentByLineComment")
 comment block:			user.idea("action CommentByBlockComment")
 ## select more:	calls jetbrains.talon

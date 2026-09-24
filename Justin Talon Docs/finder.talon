@@ -2,4 +2,5 @@ os: mac
 app: finder
 -
 
-new [window]: key(cmd-n)
+[window] new : key(cmd-n)
+file new: key(cmd-shift-n)
