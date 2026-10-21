@@ -9,9 +9,9 @@
 # same phrase defined twice in one file as a duplicate, even under different
 # context blocks.
 
-# os: mac
-# app: Android Studio
-# -
+os: mac
+app: Android Studio
+-
 
 # droid type <user.text>:
     # user.hid_type_text(user.text)
@@ -26,3 +26,9 @@
 # droid down: user.hid_key("DOWN")
 # droid left: user.hid_key("LEFT")
 # droid right: user.hid_key("RIGHT")
+
+# The emulator ignores Page Up/Down and scroll-wheel/trackpad scrolling, so
+# these drag from wherever the mouse pointer is. Keep the pointer over the
+# middle of the emulator screen. The number is the drag distance in points.
+robot up: user.hid_drag_scroll("UP", 300)
+robot down: user.hid_drag_scroll("DOWN", 300)

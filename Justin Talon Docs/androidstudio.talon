@@ -110,6 +110,7 @@ warning next:			user.idea("action GotoNextError")
 warning previous:		user.idea("action GotoPreviousError")
 ## fix (last|next) (error|air): calls jetbrains.talon
 run [it]:			user.idea("action Run")
+run test|tests: user.idea("action RunClass")
 # stop now: user.idea("execute Android.StopApp")
 edit [config|configuration|configurations]: user.idea("action editRunConfigurations")
 [android] apply: user.idea("action Android.ApplyChangesAndRestartActivity")
